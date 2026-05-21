@@ -252,8 +252,8 @@ const translations = {
       cpaText: "CPA与EA团队支持",
       secureTitle: "安全流程",
       secureText: "保护隐私的资料流程",
-      languageTitle: "普通话 + 英文",
-      languageText: "可提供双语支持",
+      languageTitle: "中文 + 英文",
+      languageText: "双语支持",
     },
     trustBuild: {
       kicker: "精品事务所，现代化流程",
