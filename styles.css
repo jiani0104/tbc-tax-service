@@ -81,39 +81,62 @@ textarea {
   font-weight: 800;
 }
 
+.brand-copy {
+  display: block;
+  min-width: 0;
+}
+
 .brand strong {
   display: block;
   color: var(--sage-dark);
   font-family: var(--serif);
-  font-size: clamp(19px, 1.9vw, 28px);
+  font-size: clamp(26px, 2.4vw, 34px);
   font-weight: 500;
-  line-height: 1;
+  line-height: 0.95;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .brand small {
   display: block;
-  margin-top: 7px;
+  margin-top: 8px;
   color: #9c762f;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
+  font-size: clamp(11px, 1vw, 13px);
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  line-height: 1.1;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .brand-mark {
   position: relative;
   display: grid;
+  flex: 0 0 auto;
   width: 54px;
   height: 54px;
   place-items: center;
-  color: var(--white);
-  background: var(--sage-dark);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.16), transparent 28px),
+    linear-gradient(145deg, #0f4a38 0%, #153f34 58%, #0b332b 100%);
   border-radius: 8px;
-  box-shadow: 0 10px 24px rgba(23, 69, 51, 0.16);
+  box-shadow: 0 10px 24px rgba(23, 69, 51, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
   font-family: var(--serif);
-  font-size: 21px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.brand-mark-text {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin-top: 0;
+  color: #fff6df;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  padding-right: 1px;
+  text-shadow: 0 1px 0 rgba(7, 58, 49, 0.35);
 }
 
 .brand-mark::before,
@@ -190,6 +213,7 @@ textarea {
   cursor: pointer;
   font-size: 13px;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .language-switch button[aria-pressed="true"] {
@@ -723,7 +747,7 @@ h3 {
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -1094,33 +1118,29 @@ textarea {
 
 @media (max-width: 440px) {
   .site-header {
+    gap: 8px;
     padding-right: 14px;
     padding-left: 14px;
   }
 
   .brand {
-    gap: 10px;
+    gap: 9px;
   }
 
   .brand small {
-    max-width: 170px;
-    font-size: 9px;
+    margin-top: 6px;
+    font-size: 10px;
+    letter-spacing: 0.14em;
   }
 
   .brand strong {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .brand-mark {
-    width: 46px;
-    height: 46px;
-    font-size: 18px;
-  }
-
-  .brand-mark::before,
-  .brand-mark::after {
-    left: 14px;
-    width: 18px;
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
   }
 
   .hero-actions,
@@ -1132,5 +1152,26 @@ textarea {
   .process-list article,
   .contact-form {
     padding: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand {
+    gap: 8px;
+  }
+
+  .brand strong {
+    font-size: 19px;
+  }
+
+  .brand small {
+    font-size: 8.5px;
+    letter-spacing: 0.11em;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    font-size: 19px;
   }
 }
