@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">TBC Services</title>
+  <desc id="logoDesc">TBC Services logo with Tax, Business, and Compliance tagline.</desc>
+  <defs>
+    <linearGradient id="tbcGradient" x1="54" y1="38" x2="354" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#084f83"/>
+      <stop offset="0.45" stop-color="#079b95"/>
+      <stop offset="1" stop-color="#064d86"/>
+    </linearGradient>
+    <linearGradient id="arcTeal" x1="68" y1="96" x2="302" y2="75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#068aa0"/>
+      <stop offset="1" stop-color="#0a6f8d"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.4" flood-color="#14211e" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <g filter="url(#softShadow)">
+    <text x="210" y="72" text-anchor="middle" fill="url(#tbcGradient)" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700" letter-spacing="-4">TBC</text>
+    <path d="M74 92c75-30 168-40 267-18-83-8-166-2-245 24z" fill="url(#arcTeal)"/>
+    <path d="M91 104c84-26 174-34 263-14-99-9-188 2-263 22z" fill="#e1bd26"/>
+    <path d="M72 110h43" stroke="#5d6062" stroke-width="1.6"/>
+    <path d="M305 110h43" stroke="#5d6062" stroke-width="1.6"/>
+    <text x="210" y="117" text-anchor="middle" fill="#323438" stroke="#f7f2e9" stroke-width="0.5" paint-order="stroke" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700" letter-spacing="5">SERVICES</text>
+    <path d="M112 128h196" stroke="#7f8283" stroke-width="1.2"/>
+    <text x="210" y="142" text-anchor="middle" fill="#343638" stroke="#f7f2e9" stroke-width="0.35" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Tax • Business • Compliance</text>
+  </g>
+</svg>
